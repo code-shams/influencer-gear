@@ -23,7 +23,8 @@ main {
     font-size: 1rem;
 }
 /*  <-- 🔥End Shared Styles 🔥  --> */
-
+/*--------------------------------------------------------- */
+/*--------------------------------------------------------- */
 /* 🔥<== Header Section Styles  ==>🔥 */
 .header {
     margin-top: 80px;
@@ -33,7 +34,7 @@ main {
     font-size: 1.5rem;
     font-weight: 700;
 }
-/* Navbar styles */
+/* 🔥<== Navbar Styles  ==>🔥 */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -48,8 +49,9 @@ main {
 .nav-link a {
     text-decoration: none;
 }
-/*  */
-/* Banner Section Styles */
+/*--------------------------------------------------------- */
+/*--------------------------------------------------------- */
+/* 🔥<== Banner Section Styles  ==>🔥 */
 .banner-container {
     display: flex;
     justify-content: space-around;
@@ -87,10 +89,19 @@ main {
     font-size: 1rem;
     font-weight: 700;
 }
-.btn-text {
+.banner-btn-text {
     margin-right: 12px;
 }
-
+/*--------------------------------------------------------- */
+/*--------------------------------------------------------- */
+/* 🔥<== Payment-images Section Styles  ==>🔥 */
+.payment-images{
+    margin-top: 70px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 /* 📱 <== Responsive Media Query Styles ==> 💻 */
 @media screen and (max-width: 576px) {
     header,
@@ -130,6 +141,13 @@ main {
     }
     .banner-btn {
         text-align: center;
+    }
+    /* Payment Section */
+    .payment-images img{
+        width: 16%;
+    }
+    .payment-images{
+        gap: 30px;
     }
 }
 /* Medium Screen */
@@ -172,5 +190,13 @@ main {
     }
     .banner-btn {
         text-align: center;
-    } 
+    }
+    /* Payment Section */
+    .payment-images img{
+        /* width: 16%; */
+    }
+    .payment-images{
+        gap: 30px;
+    }
 }
+
