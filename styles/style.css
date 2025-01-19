@@ -51,7 +51,44 @@ main {
 /*  */
 /* Banner Section Styles */
 .banner-container {
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    gap: 130px;
+    /* border: 2px solid tomato; */
+}
+
+.banner-header {
+    color: rgb(58, 58, 58);
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+.banner-image {
+    background: url(../images/circle-design.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* width: 475px; */
+    padding: 10px;
+    /* border: 2px solid steelblue; */
+}
+.banner-image img {
+    width: 440px;
+}
+
+.banner-btn button {
+    margin-top: 20px;
+    padding: 10px 24px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgb(224, 44, 109);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.btn-text {
+    margin-right: 12px;
 }
 
 /* 📱 <== Responsive Media Query Styles ==> 💻 */
@@ -75,6 +112,24 @@ main {
         grid-template-columns: repeat(2, 100px);
         gap: 10px;
         margin: 0px auto;
+    }
+    /* Banner Section */
+    .banner-container {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .banner-header,
+    .banner-info {
+        text-align: center;
+    }
+    .banner-header {
+        font-size: 2rem;
+    }
+    .banner-image img {
+        width: 100%;
+    }
+    .banner-btn {
+        text-align: center;
     }
 }
 /* Medium Screen */
@@ -100,4 +155,22 @@ main {
         justify-items: center;
         /* margin: 0px auto; */
     }
+    /* Banner Section */
+    .banner-container {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .banner-header,
+    .banner-info {
+        text-align: center;
+    }
+    .banner-header {
+        font-size: 2rem;
+    }
+    .banner-image img {
+        width: 100%;
+    }
+    .banner-btn {
+        text-align: center;
+    } 
 }
