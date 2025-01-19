@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* 🔥 <-- Shared Styles --> 🔥 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header,
+main {
+    max-width: 1155px;
+    margin: 0px auto;
+}
+/* default font styles */
+.primary-font {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.primary-para,
+.nav-link a {
+    color: rgb(58, 58, 58);
+    font-weight: 600;
+    font-size: 1rem;
+}
+/*  <-- 🔥End Shared Styles 🔥  --> */
+
+/* 🔥<== Header Section Styles  ==>🔥 */
+.header{
+    margin-top: 85px;
+}
+.brand-name {
+    color: rgb(58, 58, 58);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links-container {
+    display: flex;
+    list-style: none;
+}
+.nav-link {
+    margin-right: 34px;
+}
+.nav-link a {
+    text-decoration: none;
+}
+/*  */
+/* Banner Section Styles */
+.banner-container{
+    display: none;
+}
